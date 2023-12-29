@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 1st way to add js  -->
+    <!-- it gives an error as it stop the execution of below code  -->
+    <!-- <script src="./07_dom.js"></script>  -->
+
+    <!-- 3rd way to add js  -->
+    <!-- it load html and js file paralal (ek sath) it is also not good way -->
+    <!-- This is a Boolean attribute indicating that the browser should, if possible, load the script asynchronously. -->
+    <!-- <script src="./07_dom.js" async></script> -->
+
+    <!-- 4th and final (best) way to to add js  -->
+    <!-- This Boolean attribute is set to indicate to a browser that the script is meant to be executed after the document has been parsed, but before firing -->
+    <!-- <script src="./07_dom.js" defer></script> -->
+
+    <!-- 08 for element selection  -->
+    <!-- <script src="./08_select_elements.js" defer></script> -->
+
+    <!-- 09 for textContent and innerText  -->
+    <!-- <script src="./09_textContent_and_innerText.js" defer></script> -->
+
+    <!-- 10 CHANGE THE STYLE OF ELEMENTS  -->
+    <!-- <script src="./10_change_style_of_elements.js" defer></script> -->
+
+    <!-- 11 GET ND SET ATTRIBUTES  -->
+    <!-- <script src="./11_get_set_attributes.js" defer></script> -->
+
+    <!-- 12 SELECT MULTIPLE ELEMENTS AND LOOP THROUGH THEM  -->
+    <!-- <script src="./12_multiple_ele_&_loop_through_them.js" defer></script> -->
+
+    <!-- 13 INNER HTML  -->
+    <!-- <script src="./13_innerHTML.js" defer></script> -->
+
+    <!-- 15 CLASSLIST  -->
+    <!-- <script src="./15_classList.js" defer></script> -->
+
+    <!-- 16 NEW ELEMENT TO PAGE  -->
+    <!-- <script src="./16_new_element_to_page.js" defer></script> -->
+
+    <!-- 17 INSERT ADJACENT ELEENTS  -->
+    <!-- <script src="./17_Insert_adjacent_elements.js" defer></script> -->
+
+    <!-- 18 CLONE NODES  -->
+    <!-- <script src="./18_clone_nodes.js" defer></script> -->
+
+    <!-- 19 EXTRA METHODS TO ADD ELEMENT ON PAGE  -->
+    <!-- <script src="./19_extra_methods_to_add_elems_on_page.js" defer></script> -->
+
+    <!-- 20 STATIC LIST VS LIVE LIST  -->
+    <!-- <script src="./20_static_vs_live_list.js" defer></script> -->
+
+    <!-- 21 HOW TO GET THE DIMENSION OF ELEMENT  -->
+    <!-- <script src="./21_dimension_of_elem.js" defer></script> -->
+
+    <!-- 22 EVENTS  -->
+    <!-- <script src="./22_intro_events_+_this.js" defer></script> -->
+
+    <!-- 26 MORE EVENTS  -->
+    <!-- <script src="./26_More_events.js" defer></script> -->
+    
+    <!-- 28 DELEGATION IN PROJECT -->
+    <script src="./28_delegation_in_project.js" defer></script>
+
+    <title>My Website</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <h1 class="logo">Website</h1>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#home">HOME</a></li>
+                <li class="nav-item"><a href="">TODO</a></li>
+                <li class="nav-item"><a href="">SIGN UP</a></li>
+            </ul>
+        </nav>
+        <div class="headline">
+            <h2 id="main-heading">Manage your tasks <span style="display: none;">Hello</span></h2>
+            <button class="btn btn-headline">LEARN MORE</button>
+
+            <!-- first way to add events : not good way -->
+            <!-- <button class="btn btn-headline" onclick="console.log('you clicked me')">LEARN MORE</button> -->
+        </div>
+    </header>
+
+    <section class="todo-section container">
+        <h2>Your plan for today?</h2>
+
+        <!-- todo form  -->
+        <form class="form-todo">
+            <input type="text" name="" id="" placeholder="Add todo">
+            <input type="submit" value="ADD TODO" class="btn">
+        </form>
+
+        <ul class="todo-list">
+            <!-- <li class="first-todo">todo 1</li> -->
+            <!-- <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li> -->
+
+            <li>
+                <span class="text">Do this do that</span>
+                <div class="todo-buttons">
+                    <button class="todo-btn done">Done</button>
+                    <button class="todo-btn remove">Remove</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="singup-section container">
+        <h2>Sign Up</h2>
+
+        <!-- sign up form  -->
+        <form class="form-signup">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="about">About Yourself</label>
+                <textarea name="about" id="about" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn signup-btn">SUBMIT</button>
+        </form>
+    </section>
+
+    <!-- 2nd way to add js  -->
+    <!-- it is time consuming as first load html, css nd then js  -->
+    <!-- <script src="./07_dom.js"></script> -->
+</body>
+
+</html>
